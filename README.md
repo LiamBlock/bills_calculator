@@ -21,7 +21,7 @@ The calculation is performed as follows:
 
 ## Getting Started
 
-To run the Household Bills Calculator locally, simply clone the repository and open the `index.html` file in your web browser. No additional setup or installation is required.
+To run the Household Bills Calculator locally, run install the requirements in `requirements.txt` and run `python ./bills_calculator.py`
 
 ## Contributing
 

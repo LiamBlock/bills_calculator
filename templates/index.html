@@ -2,46 +2,50 @@
 <html>
 <head>
     <title>Household Bills Calculator</title>
+    <!-- Set viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Add Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">Household Bills Calculator</h1>
-        <form method="POST" action="/">
-            <div class="form-group">
+        <h1 class="mb-4 text-center">Household Bills Calculator</h1>
+        <form method="POST" action="/" class="row">
+            <div class="col-md-6">
                 <label for="income1">Person 1:</label>
                 <input type="number" class="form-control" name="income1" required>
             </div>
-            <div class="form-group">
+            <div class="col-md-6">
                 <label for="income2">Person 2:</label>
                 <input type="number" class="form-control" name="income2" required>
             </div>
-            <div class="form-group">
+            <div class="col-md-6">
                 <label for="rent">Rent:</label>
                 <input type="number" class="form-control" name="rent" required>
             </div>
-            <div class="form-group">
+            <div class="col-md-6">
                 <label for="electricity">Electricity:</label>
                 <input type="number" class="form-control" name="electricity" required>
             </div>
-            <div class="form-group">
+            <div class="col-md-6">
                 <label for="water">Water:</label>
                 <input type="number" class="form-control" name="water" required>
             </div>
-            <div class="form-group">
+            <div class="col-md-6">
                 <label for="council_tax">Council tax:</label>
                 <input type="number" class="form-control" name="council_tax" required>
             </div>
-            <div class="form-group">
+            <div class="col-md-6">
                 <label for="broadband">Broadband:</label>
                 <input type="number" class="form-control" name="broadband" required>
             </div>
-            <button type="submit" class="btn btn-primary">Calculate Share</button>
+            <div class="col-12 mt-3">
+                <button type="submit" class="btn btn-primary btn-block">Calculate Share</button>
+            </div>
         </form>
         <div class="mt-4">
             <h2>Results:</h2>
-            <pre>{{ result }}</pre>
+            <pre class="bg-light p-3">{{ result }}</pre>
         </div>
     </div>
 

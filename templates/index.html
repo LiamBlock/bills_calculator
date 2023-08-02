@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Household Bills Calculator</title>
+    <!-- Add Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Household Bills Calculator</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="income1">Person 1:</label>
+                <input type="number" class="form-control" name="income1" required>
+            </div>
+            <div class="form-group">
+                <label for="income2">Person 2:</label>
+                <input type="number" class="form-control" name="income2" required>
+            </div>
+            <div class="form-group">
+                <label for="rent">Rent:</label>
+                <input type="number" class="form-control" name="rent" required>
+            </div>
+            <div class="form-group">
+                <label for="electricity">Electricity:</label>
+                <input type="number" class="form-control" name="electricity" required>
+            </div>
+            <div class="form-group">
+                <label for="water">Water:</label>
+                <input type="number" class="form-control" name="water" required>
+            </div>
+            <div class="form-group">
+                <label for="council_tax">Council tax:</label>
+                <input type="number" class="form-control" name="council_tax" required>
+            </div>
+            <div class="form-group">
+                <label for="broadband">Broadband:</label>
+                <input type="number" class="form-control" name="broadband" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate Share</button>
+        </form>
+        <div class="mt-4">
+            <h2>Results:</h2>
+            <pre>{{ result }}</pre>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS from CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

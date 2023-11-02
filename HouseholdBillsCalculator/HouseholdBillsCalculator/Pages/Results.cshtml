@@ -1,0 +1,19 @@
+﻿@page
+@model HouseholdBillsCalculator.Pages.ResultsModel
+
+
+<div class="container mt-5">
+    <h1 class="mb-4">Results</h1>
+
+    <div class="mb-3">
+        <p>Person 1 made <b>@TempData["Person1Share"]%</b> of the income.</p>
+        <p>Person 2 made <b>@TempData["Person2Share"]%</b> of the income.</p>
+    </div>
+
+    <div class="mb-3">
+        <p>Person 1 pays <b>£@TempData["Person1Pays"]</b></p>
+        <p>Person 2 pays <b>£@TempData["Person2Pays"]</b></p>
+    </div>
+
+    <a href="/" class="btn btn-primary">Back to Calculator</a>
+</div>

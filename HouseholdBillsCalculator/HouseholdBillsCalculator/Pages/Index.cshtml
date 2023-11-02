@@ -1,0 +1,56 @@
+﻿@page
+@model HouseholdBillsCalculator.Pages.IndexModel
+
+<div class="container mt-5">
+    <h1 class="mb-4">Household Bills Calculator</h1>
+
+    <form method="post">
+        <div class="mb-3 row">
+            <label for="person1Income" class="col-sm-2 col-form-label">Person 1 Income:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="person1Income" name="Person1Income" value="@Model.Person1Income" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="person2Income" class="col-sm-2 col-form-label">Person 2 Income:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="person2Income" name="Person2Income" value="@Model.Person2Income" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="Rent" class="col-sm-2 col-form-label">Rent:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="Rent" name="Rent" value="@Model.Rent" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="electricity" class="col-sm-2 col-form-label">Electricity:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="Electricity" name="electricity" value="@Model.Electricity" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="councilTax" class="col-sm-2 col-form-label">Council Tax:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="councilTac" name="CouncilTax" value="@Model.CouncilTax" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="water" class="col-sm-2 col-form-label">Water:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="water" name="Water" value="@Model.Water" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="broadband" class="col-sm-2 col-form-label">Broadband:</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="broadband" name="Broadband" value="@Model.Broadband" required />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Calculate</button>
+            </div>
+        </div>
+    </form>
+</div>

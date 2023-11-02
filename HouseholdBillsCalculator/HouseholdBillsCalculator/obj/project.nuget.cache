@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kUvmecbTIxCLVWC3G8svh4SMw7BO+FbtR3rFssAUtVlWWguvxsCFoAXNbKJfS9OtQqykydEY+A/jDrUjaZlTDA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Liam\\Documents\\GitHub\\bills_calculator_but_c#\\HouseholdBillsCalculator\\HouseholdBillsCalculator\\HouseholdBillsCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Liam\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512",
+    "C:\\Users\\Liam\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
